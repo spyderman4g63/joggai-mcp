@@ -1,0 +1,58 @@
+{
+  "name": "joggai-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the Jogg.ai video generation API - 47 tools covering avatars, videos, templates, translation, lip sync, webhooks and more",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "joggai-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "jogg",
+    "joggai",
+    "jogg-ai",
+    "video",
+    "ai",
+    "avatar",
+    "video-generation",
+    "ai-video",
+    "tts",
+    "lip-sync",
+    "video-translation",
+    "claude",
+    "claude-code",
+    "cursor",
+    "windsurf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spyderman4g63/joggai-mcp.git"
+  },
+  "homepage": "https://github.com/spyderman4g63/joggai-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/spyderman4g63/joggai-mcp/issues"
+  },
+  "author": "spyderman4g63",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}
