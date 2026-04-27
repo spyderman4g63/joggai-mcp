@@ -13,7 +13,7 @@ Sign in at [app.jogg.ai](https://app.jogg.ai) &rarr; click your profile icon &ra
 ### 2. Install
 
 ```bash
-npm install -g joggai-mcp
+npm install -g github:spyderman4g63/joggai-mcp
 ```
 
 ### 3. Add to your MCP client
