@@ -58,6 +58,40 @@ Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 }
 ```
 
+#### OpenAI Codex
+
+Add to `~/.codex/config.json`:
+
+```json
+{
+  "mcpServers": {
+    "joggai": {
+      "command": "joggai-mcp",
+      "env": {
+        "JOGGAI_API_KEY": "your_api_key_here"
+      }
+    }
+  }
+}
+```
+
+#### OpenCode
+
+Add to `~/.config/opencode/opencode.json` under `mcpServers`:
+
+```json
+{
+  "mcpServers": {
+    "joggai": {
+      "command": "joggai-mcp",
+      "env": {
+        "JOGGAI_API_KEY": "your_api_key_here"
+      }
+    }
+  }
+}
+```
+
 #### Windsurf / Other MCP Clients
 
 ```json
