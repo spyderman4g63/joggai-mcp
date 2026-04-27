@@ -10,18 +10,18 @@ Works with Claude Code, Cursor, Windsurf, and any MCP-compatible client.
 
 [app.jogg.ai](https://app.jogg.ai) &rarr; click your avatar &rarr; **API** &rarr; copy your key.
 
-### 2. Add to your MCP client
+### 2. Install
+
+```bash
+npm install -g joggai-mcp
+```
+
+### 3. Add to your MCP client
 
 #### Claude Code
 
 ```bash
-npx -y joggai-mcp
-```
-
-One-liner to register it:
-
-```bash
-claude mcp add joggai -e JOGGAI_API_KEY=your_api_key -- npx -y joggai-mcp
+claude mcp add joggai -e JOGGAI_API_KEY=your_api_key -- joggai-mcp
 ```
 
 #### Claude Code (settings JSON)
@@ -32,8 +32,7 @@ Add to `~/.claude.json`:
 {
   "mcpServers": {
     "joggai": {
-      "command": "npx",
-      "args": ["-y", "joggai-mcp"],
+      "command": "joggai-mcp",
       "env": {
         "JOGGAI_API_KEY": "your_api_key_here"
       }
@@ -50,8 +49,7 @@ Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 {
   "mcpServers": {
     "joggai": {
-      "command": "npx",
-      "args": ["-y", "joggai-mcp"],
+      "command": "joggai-mcp",
       "env": {
         "JOGGAI_API_KEY": "your_api_key_here"
       }
@@ -66,8 +64,7 @@ Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
 {
   "mcpServers": {
     "joggai": {
-      "command": "npx",
-      "args": ["-y", "joggai-mcp"],
+      "command": "joggai-mcp",
       "env": {
         "JOGGAI_API_KEY": "your_api_key_here"
       }
@@ -75,16 +72,6 @@ Add to `.cursor/mcp.json` (project) or `~/.cursor/mcp.json` (global):
   }
 }
 ```
-
-### Alternative: global install
-
-If you prefer a permanent install instead of `npx`:
-
-```bash
-npm install -g joggai-mcp
-```
-
-Then use `"command": "joggai-mcp"` (no args) in your MCP config.
 
 ### Alternative: from source
 
@@ -94,7 +81,7 @@ cd joggai-mcp
 npm install && npm run build
 ```
 
-Then point your MCP config at `node /path/to/joggai-mcp/dist/index.js`.
+Then use `"command": "node"` with `"args": ["/path/to/joggai-mcp/dist/index.js"]` in your MCP config.
 
 ## Features
 
