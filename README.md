@@ -8,7 +8,7 @@ Works with Claude Code, Cursor, Windsurf, and any MCP-compatible client.
 
 ### 1. Get your Jogg.ai API key
 
-[app.jogg.ai](https://app.jogg.ai) &rarr; click your avatar &rarr; **API** &rarr; copy your key.
+Sign in at [app.jogg.ai](https://app.jogg.ai) &rarr; click your profile icon &rarr; **API** &rarr; copy your key.
 
 ### 2. Install
 
